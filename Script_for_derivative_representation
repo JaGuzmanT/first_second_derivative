@@ -1,0 +1,32 @@
+from cmath import cos, pi, sin
+import numpy as np
+import math
+import matplotlib.pyplot as plt
+
+x=np.linspace(-5,5,num=21)
+y=4*x**3+2*x**2-5*x+2
+plt.plot(x,y,'r',label='Función inicial')
+plt.legend()
+plt.xlabel('x')
+plt.ylabel('f(x)')
+plt.title('Función')
+plt.grid()
+plt.savefig('Funcion.pdf')
+y2=12*x**2+4*x-5
+plt.plot(x,y2,'k', label='1era derivada')
+plt.legend()
+plt.xlabel('x')
+plt.ylabel('f(x)')
+plt.title('Función')
+plt.grid()
+plt.savefig('Funcion_1.pdf')
+plt.show()
+y3=24*x+4
+plt.plot(x,y3,'b', label='2a derivada')
+plt.legend()
+plt.xlabel('x')
+plt.ylabel('f(x)')
+plt.title('Función')
+plt.grid()
+plt.savefig('Funcion_3.pdf')
+plt.show()
